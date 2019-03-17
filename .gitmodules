@@ -1,0 +1,4 @@
+[submodule "ERPGO/quotation_discount"]
+	path = ERPGO/quotation_discount
+	url = git@github.com:ERPGO/quotation_discount.git
+	branch = 11.0
