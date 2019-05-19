@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <!--
+    <record model="ir.ui.view" id="mailing_splitter.list">
+      <field name="name">mailing_splitter list</field>
+      <field name="model">mailing_splitter.mailing_splitter</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+    -->
+
+    <!-- actions opening views on models -->
+    <!--
+    <record model="ir.actions.act_window" id="mailing_splitter.action_window">
+      <field name="name">mailing_splitter window</field>
+      <field name="res_model">mailing_splitter.mailing_splitter</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+    -->
+
+    <!-- server action to the one above -->
+    <!--
+    <record model="ir.actions.server" id="mailing_splitter.action_server">
+      <field name="name">mailing_splitter server</field>
+      <field name="model_id" ref="model_mailing_splitter_mailing_splitter"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": self._name,
+        }
+      </field>
+    </record>
+    -->
+
+    <!-- Top menu item -->
+    <!--
+    <menuitem name="mailing_splitter" id="mailing_splitter.menu_root"/>
+    -->
+    <!-- menu categories -->
+    <!--
+    <menuitem name="Menu 1" id="mailing_splitter.menu_1" parent="mailing_splitter.menu_root"/>
+    <menuitem name="Menu 2" id="mailing_splitter.menu_2" parent="mailing_splitter.menu_root"/>
+    -->
+    <!-- actions -->
+    <!--
+    <menuitem name="List" id="mailing_splitter.menu_1_list" parent="mailing_splitter.menu_1"
+              action="mailing_splitter.action_window"/>
+    <menuitem name="Server to list" id="mailing_splitter" parent="mailing_splitter.menu_2"
+              action="mailing_splitter.action_server"/>
+    -->
+  </data>
+</odoo>
